@@ -21,7 +21,7 @@ Serial
 ./im_serial <tamanho_da_matriz> <orientacao>
 <tamanho_da_matriz>: Tamanho N da matriz NxN.
 
-<orientacao>:
+orientacao:
 
 1 = orientação por linhas
 2 = orientação por colunas
