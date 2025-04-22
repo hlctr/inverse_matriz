@@ -1,0 +1,32 @@
+**Como executar o código paralelo com OpenMP**
+
+01. Navegue até a pasta onde salvou os arquivos
+cd /caminho/para/sua/pasta
+
+02. Ajuste os parâmetros do benchmark (caso necessário)
+    - Abra o arquivo run_benchmark.sh
+    - Modifique os arrays de tamanhos e threads conforme necessário:
+
+        # Defina o tamanho das matrizes que irá testar
+        SIZES=(10 50 100 500 1000)
+
+        # Ajuste o número de threads de acordo com o número de núcleos do seu processador
+        THREADS=(1 2 4)
+
+        # Reduza o número de execuções para testes iniciais
+        runs=1  # em vez de 3
+
+03. Compile e execute o benchmark
+    # No terminal, execute o script
+    ./run_benchmark.sh
+
+        - Ou execute os passos manualmente em vez de utilizar o script:
+            # Compilar
+            gcc -O3 -fopenmp -o inversion_omp im_parallel.c -lm
+
+            # Executar para um tamanho específico e número de threads
+            ./inversion_omp 1000 4  # matriz 1000x1000 com 4 threads
+
+
+
+
