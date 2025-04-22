@@ -1,0 +1,208 @@
+ **Características do hardware utilizado nos testes**   
+
+    descrição: Notebook
+    produto: Aspire A315-23
+    fabricante: Acer
+    versão: V1.14
+    largura: 64 bits
+    capacidades: smbios-3.1.1 dmi-3.1.1 smp vsyscall32
+    configuração: chassis=notebook family=Aspire 3
+  *-core
+       descrição: Placa-mãe
+       produto: Lotus_DA
+       fabricante: DL
+       versão: V1.14
+       slot: Type2 - Board Chassis Location
+     *-firmware
+          descrição: BIOS
+          fabricante: Insyde Corp.
+          versão: V1.14
+          date: 02/18/2021
+          tamanho: 128KiB
+          capacidade: 4608KiB
+          capacidades: pci upgrade shadowing cdboot bootselect edd int13floppynec int13floppytoshiba int13floppy360 int13floppy1200 int13floppy720 int13floppy2880 int9keyboard int10video acpi usb biosbootspecification uefi
+     *-cpu
+          descrição: CPU
+          produto: AMD Ryzen 3 3250U with Radeon Graphics
+          fabricante: Advanced Micro Devices [AMD]
+          ID físico: 4
+          informações do barramento: cpu@0
+          versão: 23.24.1
+          slot: FP5
+          tamanho: 1349MHz
+          capacidade: 3500MHz
+          largura: 64 bits
+          clock: 100MHz
+          configuração: cores=2 enabledcores=2 microcode=135299337 threads=4
+        *-cache:0
+             descrição: L1 cache
+             ID físico: 5
+             slot: L1 - Cache
+             tamanho: 192KiB
+             capacidade: 192KiB
+             clock: 1GHz (1.0ns)
+             capacidades: pipeline-burst internal write-back unified
+             configuração: level=1
+        *-cache:1
+             descrição: L2 cache
+             ID físico: 6
+             slot: L2 - Cache
+             tamanho: 1MiB
+             capacidade: 1MiB
+             clock: 1GHz (1.0ns)
+             capacidades: pipeline-burst internal write-back unified
+             configuração: level=2
+        *-cache:2
+             descrição: L3 cache
+             ID físico: 7
+             slot: L3 - Cache
+             tamanho: 4MiB
+             capacidade: 4MiB
+             clock: 1GHz (1.0ns)
+             capacidades: pipeline-burst internal write-back unified
+             configuração: level=3
+     *-memory
+          descrição: Memória do sistema
+          ID físico: b
+          slot: Placa do sistema ou placa-mãe
+          tamanho: 8GiB
+        *-bank:0
+             descrição: SODIMM DDR4 Síncrono Unbuffered (Unregistered) 2667 MHz (0,4 ns)
+             produto: AM1P26KC4U1-BACS
+             fabricante: A-DATA Technology
+             ID físico: 0
+             serial: B1740000
+             slot: DIMM 0
+             tamanho: 4GiB
+             largura: 64 bits
+             clock: 2667MHz (0.4ns)
+        *-bank:1
+             descrição: SODIMM DDR4 Síncrono Unbuffered (Unregistered) 3200 MHz (0,3 ns)
+             produto: Unknown
+             fabricante: Unknown
+             ID físico: 1
+             serial: 00000000
+             slot: DIMM 0
+             tamanho: 4GiB
+             largura: 64 bits
+             clock: 3200MHz (0.3ns)
+     *-pci:0
+          descrição: Host bridge
+          produto: Raven/Raven2 Root Complex
+          fabricante: Advanced Micro Devices, Inc. [AMD]
+          ID físico: 100
+          informações do barramento: pci@0000:00:00.0
+          versão: 00
+          largura: 32 bits
+          clock: 33MHz
+        *-generic DISPONÍVEL
+             descrição: IOMMU
+             produto: Raven/Raven2 IOMMU
+             fabricante: Advanced Micro Devices, Inc. [AMD]
+             ID físico: 0.2
+             informações do barramento: pci@0000:00:00.2
+             versão: 00
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: msi ht bus_master cap_list
+             configuração: latency=0
+        *-pci:0
+             descrição: PCI bridge
+             produto: Raven/Raven2 PCIe GPP Bridge [6:0]
+             fabricante: Advanced Micro Devices, Inc. [AMD]
+             ID físico: 1.1
+             informações do barramento: pci@0000:00:01.1
+             versão: 00
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci pm pciexpress msi ht normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:26 porta de E/S:3000(tamanho=4096) memória:c0b00000-c0cfffff porta de E/S:c0d00000(tamanho=2097152)
+        *-pci:3
+             descrição: PCI bridge
+             produto: Raven/Raven2 PCIe GPP Bridge [6:0]
+             fabricante: Advanced Micro Devices, Inc. [AMD]
+             ID físico: 1.4
+             informações do barramento: pci@0000:00:01.4
+             versão: 00
+             largura: 32 bits
+             clock: 33MHz
+             capacidades: pci pm pciexpress msi ht normal_decode bus_master cap_list
+             configuração: driver=pcieport
+             recursos: irq:29 memória:c0900000-c09fffff
+           *-nvme
+                descrição: NVMe device
+                produto: KINGSTON SNV2S250G
+                fabricante: Kingston Technology Company, Inc.
+                ID físico: 0
+                informações do barramento: pci@0000:04:00.0
+                nome lógico: /dev/nvme0
+                versão: ELFK0S.6
+                largura: 64 bits
+                clock: 33MHz
+                capacidades: nvme pciexpress msix msi pm nvm_express bus_master cap_list
+                configuração: driver=nvme latency=0 nqn=nqn.2020-04.com.kingston...
+                recursos: irq:43 memória:c0900000-c0903fff
+              *-namespace:0
+                   descrição: NVMe disk
+                   ID físico: 0
+                   nome lógico: hwmon3
+              *-namespace:1
+                   descrição: NVMe disk
+                   ID físico: 2
+                   nome lógico: /dev/ng0n1
+              *-namespace:2
+                   descrição: NVMe disk
+                   ID físico: 1
+                   informações do barramento: nvme@0:1
+                   nome lógico: /dev/nvme0n1
+                   tamanho: 232GiB (250GB)
+                   capacidades: gpt-1.00 partitioned partitioned:gpt
+                   configuração: guid=ed3cb1d7-0342-4737-8dae-15a6798f1748 logicalsectorsize=512 sectorsize=512 wwid=eui.00000000000000000026b778522a85b5
+                 *-volume:0
+                      descrição: Windows FAT volume
+                      fabricante: MSDOS5.0
+                      ID físico: 1
+                      informações do barramento: nvme@0:1,1
+                      nome lógico: /dev/nvme0n1p1
+                      nome lógico: /boot/efi
+                      versão: FAT32
+                      tamanho: 95MiB
+                      capacidade: 99MiB
+                      capacidades: boot nomount fat initialized
+                      configuração: FATs=2 filesystem=fat mount.fstype=vfat mount.options=rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro name=EFI system partition state=mounted
+                 *-volume:1
+                      descrição: reserved partition
+                      fabricante: Windows
+                      ID físico: 2
+                      informações do barramento: nvme@0:1,2
+                      nome lógico: /dev/nvme0n1p2
+                      serial: b4325c17-4b59-4394-bcd8-02d4809e6d0d
+                      capacidade: 15MiB
+                      capacidades: nofs nomount
+                      configuração: name=Microsoft reserved partition
+                 *-volume:2
+                      descrição: Windows NTFS volume
+                      fabricante: Windows
+                      ID físico: 3
+                      informações do barramento: nvme@0:1,3
+                      nome lógico: /dev/nvme0n1p3
+                      nome lógico: /media/herlon/C8E2BD7CE2BD6EF6
+                      versão: 3.1
+                      tamanho: 163GiB
+                      capacidade: 163GiB
+                      capacidades: ntfs initialized
+                      configuração: clustersize=4096 created=2024-02-03 13:05:00 filesystem=ntfs mount.fstype=fuseblk mount.options=rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other,blksize=4096 name=Basic data partition state=mounted
+                 *-volume:3
+                      descrição: volume EXT4
+                      fabricante: Linux
+                      ID físico: 4
+                      informações do barramento: nvme@0:1,4
+                      nome lógico: /dev/nvme0n1p4
+                      nome lógico: /
+                      versão: 1.0
+                      tamanho: 69GiB
+                      capacidades: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+                      configuração: created=2025-04-01 21:12:47 filesystem=ext4 lastmountpoint=/ modified=2025-04-21 18:02:11 mount.fstype=ext4 mount.options=rw,relatime,errors=remount-ro mounted=2025-04-21 15:01:41 state=mounted
+
+
