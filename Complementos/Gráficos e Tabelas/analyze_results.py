@@ -59,7 +59,7 @@ plt.xlabel('Número de Threads', fontsize=12)
 plt.ylabel('Speedup (T_serial / T_paralelo)', fontsize=12)
 plt.grid(True)
 plt.legend(title='Tamanho', title_fontsize=12, fontsize=10)
-plt.xticks([1, 2, 4, 8, 16])
+plt.xticks([1, 2, 3, 4, 6]) #Inclua aqui o número de Threads para ajustar o gráfico
 
 # Plot 3: Eficiência (Speedup/Threads) X Número de Threads
 df_omp_avg['efficiency'] = df_omp_avg['speedup'] / df_omp_avg['num_threads']
@@ -76,7 +76,7 @@ plt.xlabel('Número de Threads', fontsize=12)
 plt.ylabel('Eficiência (Speedup/Threads)', fontsize=12)
 plt.grid(True)
 plt.legend(title='Tamanho', title_fontsize=12, fontsize=10)
-plt.xticks([1, 2, 4, 8, 16])
+plt.xticks([1, 2, 3, 4, 6]) #Inclua aqui o número de Threads para ajustar o gráfico
 
 # Plot 4: Comparação direta serial X paralelo
 best_parallel_avg = df_omp_avg.loc[df_omp_avg.groupby('tamanho_matriz')['tempo_execucao'].idxmin()]
