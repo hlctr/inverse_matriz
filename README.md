@@ -44,7 +44,7 @@ gcc -o im_parallel im_parallel.c -fopenmp -lm
   - `1` = orientação a linhas
   - `2` = orientação a colunas
 
-### 🔸 Paralelo
+### 🔸 Paralelo (OpenMP)
 ```bash
 ./im_parallel <tamanho_da_matriz> <num_threads>
 ```
@@ -68,8 +68,6 @@ Após o cálculo da inversa, é realizada a multiplicação da matriz original p
 Os arquivos `.csv` permitem visualizar:
 - Tempo de execução por variação e tamanho de matriz
 - Speedup obtido com diferentes quantidades de threads
-
-🔧 Dica: Utilize ferramentas como Excel, Google Sheets ou Python (pandas + matplotlib) para gerar gráficos comparativos.
 
 ## 🧠 Conclusão
 
